@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderContainer, Logo, Intro } from "./styles";
+import { HeaderContainer, LogoHome, Intro } from "./styles";
 import { H1 } from "../../styles"
 
 
@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Logo id="logo"/>
+      <LogoHome id="logo"/>
       <Intro>
         <H1>Maxime Mondet<br/>Front-end Developer</H1>
       </Intro>

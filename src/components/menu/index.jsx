@@ -1,9 +1,9 @@
 import React from "react";
 import { MenuContainer, MenuImg1, MenuImg2 } from "./styles";
 
-const Menu = () => {
+const Menu = ({openMenu}) => {
   return (
-    <MenuContainer>
+    <MenuContainer onClick={openMenu}>
       <MenuImg1 />
       <MenuImg2 />
     </MenuContainer>

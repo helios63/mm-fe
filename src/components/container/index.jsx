@@ -1,31 +1,123 @@
 import React from "react";
-
+import ReactPlayer from 'react-player'
 import { BodyContainer, Project, ProjectIMG, Link, Arrow, Description } from "./styles";
-import { H2 } from "../../styles";
+import { H2, P } from "../../styles";
 import planetExchange from '../../assets/planet-exchange.jpg';
+import comicQueens from '../../assets/comic-queens.jpg';
+import planetExchangeVideo from '../../assets/planet-echange-video.mp4';
+import lddlVideo from '../../assets/lesdisquesdulobby-video.mp4';
+import twoemergeVideo from '../../assets/2emerge-video.mp4';
+import sobaVideo from '../../assets/soba-video.mp4';
+import xaviVideo from '../../assets/xavi-video.mp4';
 
 const Container = () => {
   return (
     <BodyContainer>
       <Project>
-          <a href="http://planetexchange.org" target="_blank" rel="noreferrer">
-            <ProjectIMG src={planetExchange}/>
+          <a href="http://www.planetexchange.org" target="_blank" rel="noreferrer">
+            <ReactPlayer
+              url={planetExchangeVideo}
+              width="100%"
+              height="100%"
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
+              fallback={planetExchange} />
             <Link>
               <H2>planetexchange.org</H2>
               <Arrow />
             </Link>
           </a>
-        <Description>Mobile website to connect people who wants to save money, space and the planet. Built in 2 weeks. My main responsibility was the Front-End development and Design conception of this mobile application.</Description>
+        <Description>Mobile website to connect people who wants to save money, space and the planet. Built in 2 weeks as final project of Le Wagon's Full Stack Developer Bootcamp. My main responsibility was the Front-End development and Design conception of this mobile application.</Description>
       </Project>
 
       <Project>
-        <ProjectIMG src={planetExchange}/>
+        <a href="https://comic-queens.herokuapp.com/" target="_blank" rel="noreferrer">
+        <ProjectIMG src={comicQueens}/>
         <Link>
-          <H2>Link</H2>
+          <H2>comic-queens</H2>
           <Arrow />
         </Link>
-        <Description>Description</Description>
+        </a>
+        <Description>React App. Find your favorite female comic character!</Description>
       </Project>
+
+      <Project>
+          <a href="http://lesdisquesdulobby.fr" target="_blank" rel="noreferrer">
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url={lddlVideo}
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
+              fallback={planetExchange} />
+            <Link>
+              <H2>lesdisquesdulobby.fr</H2>
+              <Arrow />
+            </Link>
+          </a>
+        <Description>Les Disques du Lobby is a SoundCloud platform of exclusive songs dedicated to the promotion of French artists from the LGBTQI + community. This platform has been made to be able showcase Label products, inform about the artists and communicate about Label last news.</Description>
+      </Project>
+
+      <Project>
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url={twoemergeVideo}
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
+              fallback={planetExchange} />
+            <Link>
+              <H2>2-emerge.com</H2>
+              <Arrow />
+            </Link>
+        <Description>Under construction<P>2 - EMERGE is a fashion growth agency that positions & presents ambitious contemporary brands, whose stories and values align with theirs.
+				Offering a comprehensive scope of services and representation, they help designers strengthen brand DNA, develop commercial viability to increase sales, and improve sales strategy.</P></Description>
+      </Project>
+
+      <Project>
+          <a href="http://soba.archi" target="_blank" rel="noreferrer">
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url={sobaVideo}
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
+              fallback={planetExchange} />
+            <Link>
+              <H2>soba.archi</H2>
+              <Arrow />
+            </Link>
+          </a>
+        <Description>Corporate Website for Soba, an architecture agency. </Description>
+      </Project>
+
+      <Project>
+          <a href="http://xavinoguera.com" target="_blank" rel="noreferrer">
+            <ReactPlayer
+              width="100%"
+              height="100%"
+              url={xaviVideo}
+              muted={true}
+              loop={true}
+              controls={false}
+              playing={true}
+              fallback={planetExchange} />
+            <Link>
+              <H2>xavinoguera.com</H2>
+              <Arrow />
+            </Link>
+          </a>
+        <Description>Xavi Noguera is a 3D Character Artist for video games. I was in charge of creating the visual identity, logo, responsive & functionnal website.</Description>
+      </Project>
+
     </BodyContainer>
   )
 }

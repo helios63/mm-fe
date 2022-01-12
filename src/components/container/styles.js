@@ -9,6 +9,10 @@ export const BodyContainer = styled.main`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media (max-width: 450px) {
+    padding: 0 16px;
+  }
 `
 
 export const Project = styled.div`
@@ -16,7 +20,12 @@ export const Project = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 96px;
+
+  @media (max-width: 450px) {
+    margin-bottom: 48px;
+  }
 `
 
 export const ProjectIMG = styled.img`
@@ -29,14 +38,20 @@ export const Link = styled.div`
   justify-content: flex-start;
   align-items: flex-end;
   padding: 24px 0;
+
+  @media (max-width: 450px) {
+    padding: 8px 0;
+  }
 `
 
 export const Arrow = styled(ArrowSVG)`
   width: 40px;
-  filter: invert(1);
-  mix-blend-mode: difference;
   height: auto;
   margin-left: 8px;
+
+  @media (max-width: 450px) {
+    width: 32px;
+  }
 `
 
 export const Description = styled.div`

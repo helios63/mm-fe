@@ -9,13 +9,22 @@ export const MenuContainer = styled.div`
   bottom: 24px;
   right: 24px;
   cursor: pointer;
+  z-index:15;
 
+  @media (max-width: 450px) {
+    width: 66px;
+    height: 66px;
+    bottom: 24px;
+    right: 16px;
+  }
 `
 
 export const MenuImg1 = styled(MenuImg1SVG)`
   width: 88px;
-  mix-blend-mode: difference;
-  filter: invert(1);
+
+  @media (max-width: 450px) {
+    width: 66px;
+  }
 `
 
 export const MenuImg2 = styled(MenuImg2SVG)`
@@ -30,5 +39,11 @@ export const MenuImg2 = styled(MenuImg2SVG)`
   bottom: 66px;
   left: 26px;
   animation: 15s linear infinite menu;
+
+  @media (max-width: 450px) {
+    width: 28px;
+    bottom: 66px;
+    left: 20px;
+  }
 
 `
