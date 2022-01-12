@@ -22,6 +22,7 @@ export const Intro = styled.div`
   max-width: 756px;
 
   @media (max-width: 450px) {
+    margin-top: 90px;
     padding: 0 16px;
   }
 

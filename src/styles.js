@@ -34,7 +34,8 @@ const GlobalStyle = createGlobalStyle`
 
 export const H1 = styled.h1`
   font-size: 36px;
-  font-family: 'Neptun-NordMedium', sans-serif;
+  font-family: 'Neptun-NordMedium', 'Questrial', sans-serif;
+  font-weight: 400;
   color: #E9FC9E;
   font-weight: 300;
   line-height: 1;
@@ -48,9 +49,9 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   font-size: 36px;
-  font-family: 'Neptun-NordMedium', sans-serif;
+  font-family: 'Neptun-NordMedium', 'Questrial', sans-serif;
+  font-weight: 400;
   color: #E9FC9E;
-  font-weight: 300;
   line-height: 1;
   letter-spacing: .2pt;
   padding-bottom: 8px;
