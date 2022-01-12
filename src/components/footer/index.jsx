@@ -5,7 +5,12 @@ import { FooterContainer } from "./styles"
 const Footer = () => {
   return (
     <FooterContainer>
-      <Link><H2>I'm also a designer</H2><Arrow /></Link>
+      <a href="http://design.mondetmaxi.me" target="_blank" rel="noreferrer">
+        <Link>
+          <H2>I'm also a designer</H2>
+          <Arrow />
+        </Link>
+      </a>
     </FooterContainer>
   )
 }

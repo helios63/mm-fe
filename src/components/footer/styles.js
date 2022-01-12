@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  width: 100%;
   padding: 24px;
+
+  @media (max-width: 450px) {
+    padding: 12px;
+  }
 `

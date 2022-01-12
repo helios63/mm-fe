@@ -21,9 +21,11 @@ export const MenuContainer = styled.div`
 
 export const MenuImg1 = styled(MenuImg1SVG)`
   width: 88px;
+  height: 88px;
 
   @media (max-width: 450px) {
     width: 66px;
+    height: 66px;
   }
 `
 
@@ -42,7 +44,7 @@ export const MenuImg2 = styled(MenuImg2SVG)`
 
   @media (max-width: 450px) {
     width: 28px;
-    bottom: 66px;
+    bottom: 55px;
     left: 20px;
   }
 
