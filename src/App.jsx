@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Menu from "./components/menu";
 import Container from "./components/container";
 import MenuPanel from "./components/menuPanel";
+import Footer from "./components/footer";
 import { Transition } from 'react-transition-group'
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         {(state) => <MenuPanel closeMenu={closeMenu} state={state}/>}
       </Transition>
       <Container />
+      <Footer />
     </>
   );
 }

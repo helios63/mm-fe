@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-import { BodyContainer, Project, ProjectIMG, Link, Arrow, Description } from "./styles";
+import { BodyContainer, Project, ProjectIMG, Link, Arrow, Description, Text, Stacks } from "./styles";
 import { H2, P } from "../../styles";
 import planetExchange from '../../assets/planet-exchange.jpg';
 import comicQueens from '../../assets/comic-queens.jpg';
@@ -29,7 +29,22 @@ const Container = () => {
               <Arrow />
             </Link>
           </a>
-        <Description>Mobile website to connect people who wants to save money, space and the planet. Built in 2 weeks as final project of Le Wagon's Full Stack Developer Bootcamp. My main responsibility was the Front-End development and Design conception of this mobile application.</Description>
+        <Description>
+          <Text>
+            Mobile website to connect people who wants to save money,
+            space and the planet. Built in 2 weeks as final project of Le Wagon's
+            Full Stack Developer Bootcamp. My main responsibility was the Front-End
+            development and Design conception of this mobile application.
+          </Text>
+          <Stacks>
+            <ul>
+              <li>Ruby-on-Rails</li>
+              <li>SASS</li>
+              <li>Device</li>
+              <li>Geocoder</li>
+            </ul>
+          </Stacks>
+          </Description>
       </Project>
 
       <Project>
@@ -40,7 +55,17 @@ const Container = () => {
           <Arrow />
         </Link>
         </a>
-        <Description>React App. Find your favorite female comic character!</Description>
+        <Description>
+          <Text>
+            React App. Find your favorite female comic character!
+          </Text>
+          <Stacks>
+            <ul>
+              <li>React JS</li>
+              <li>React-Transitions</li>
+            </ul>
+          </Stacks>
+        </Description>
       </Project>
 
       <Project>
@@ -59,7 +84,21 @@ const Container = () => {
               <Arrow />
             </Link>
           </a>
-        <Description>Les Disques du Lobby is a SoundCloud platform of exclusive songs dedicated to the promotion of French artists from the LGBTQI + community. This platform has been made to be able showcase Label products, inform about the artists and communicate about Label last news.</Description>
+        <Description>
+          <Text>
+            Les Disques du Lobby is a SoundCloud platform of exclusive songs dedicated
+            to the promotion of French artists from the LGBTQI + community. This platform
+            has been made to be able showcase Label products, inform about the artists and
+            communicate about Label last news.
+          </Text>
+          <Stacks>
+            <ul>
+              <li>Wordpress</li>
+              <li>Canvas</li>
+              <li>Soundcloud API</li>
+            </ul>
+          </Stacks>
+        </Description>
       </Project>
 
       <Project>
@@ -76,8 +115,22 @@ const Container = () => {
               <H2>2-emerge.com</H2>
               <Arrow />
             </Link>
-        <Description>Under construction<P>2 - EMERGE is a fashion growth agency that positions & presents ambitious contemporary brands, whose stories and values align with theirs.
-				Offering a comprehensive scope of services and representation, they help designers strengthen brand DNA, develop commercial viability to increase sales, and improve sales strategy.</P></Description>
+        <Description>
+          <Text>
+            Under construction
+            <P>2 - EMERGE is a fashion growth agency that positions & presents ambitious
+            contemporary brands, whose stories and values align with theirs.
+				    Offering a comprehensive scope of services and representation, they
+            help designers strengthen brand DNA, develop commercial viability to increase
+            sales, and improve sales strategy.
+            </P>
+          </Text>
+          <Stacks>
+            <ul>
+              <li>Wordpress</li>
+            </ul>
+          </Stacks>
+        </Description>
       </Project>
 
       <Project>
@@ -96,7 +149,16 @@ const Container = () => {
               <Arrow />
             </Link>
           </a>
-        <Description>Corporate Website for Soba, an architecture agency. </Description>
+        <Description>
+          <Text>
+             Corporate Website for Soba, an architecture agency.
+          </Text>
+          <Stacks>
+            <ul>
+              <li>Wordpress</li>
+            </ul>
+          </Stacks>
+        </Description>
       </Project>
 
       <Project>
@@ -115,7 +177,17 @@ const Container = () => {
               <Arrow />
             </Link>
           </a>
-        <Description>Xavi Noguera is a 3D Character Artist for video games. I was in charge of creating the visual identity, logo, responsive & functionnal website.</Description>
+        <Description>
+          <Text>
+             Xavi Noguera is a 3D Character Artist for video games.
+             I was in charge of creating the visual identity, logo, responsive & functionnal website.
+          </Text>
+          <Stacks>
+            <ul>
+              <li>Wordpress</li>
+            </ul>
+          </Stacks>
+        </Description>
       </Project>
 
     </BodyContainer>

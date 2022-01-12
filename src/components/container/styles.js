@@ -55,7 +55,42 @@ export const Arrow = styled(ArrowSVG)`
 `
 
 export const Description = styled.div`
-  max-width: 480px;
-  padding: 12px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
+`
+
+export const Text = styled.div`
+  max-width: 480px;
+  margin-right: 12px;
+
+  @media (max-width: 450px) {
+    margin-right: 0;
+  }
+`
+
+export const Stacks = styled.div`
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    font-family: 'Neptun-NordMedium', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    list-style: none;
+  }
+
+  @media (max-width: 450px) {
+    padding-top: 24px;
+  }
 `
