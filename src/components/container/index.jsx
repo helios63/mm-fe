@@ -102,6 +102,7 @@ const Container = () => {
       </Project>
 
       <Project>
+          <a href="https://2-emerge.com" target="_blank" rel="noreferrer">
             <ReactPlayer
               width="100%"
               height="100%"
@@ -115,9 +116,9 @@ const Container = () => {
               <H2>2-emerge.com</H2>
               <Arrow />
             </Link>
+          </a>
         <Description>
           <Text>
-            Under construction
             <P>2 - EMERGE is a fashion growth agency that positions & presents ambitious
             contemporary brands, whose stories and values align with theirs.
 				    Offering a comprehensive scope of services and representation, they
